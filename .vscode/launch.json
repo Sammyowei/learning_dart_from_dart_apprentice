@@ -1,0 +1,11 @@
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "learning_dart_from_dart_apprentice",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
