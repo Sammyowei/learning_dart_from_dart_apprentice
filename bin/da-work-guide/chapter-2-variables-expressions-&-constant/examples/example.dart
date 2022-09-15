@@ -116,11 +116,22 @@ subtraction. popularly known as BODMAS IN THE
   var someNumber = 10;
   someNumber = 15;
   print(someNumber);
-
+  print('\n*********************************\n');
   // Constants
   /* constants are immutable data
-  i.e once it has been declared it cant be cha
-  nged later on */
+  i.e once it has been declared it cant be changed later on */
 
   const myConst = 10;
+  print(myConst);
+
+  print('\n*********************************\n');
+
+  // constant variables are compile-time variables
+
+  //Final constants
+  // A final constant is known as a runtime constant
+  //i.e its value is only known at runt time.......
+
+  final hourSinceMidnight = DateTime.now().hour;
+  print(hourSinceMidnight);
 }
