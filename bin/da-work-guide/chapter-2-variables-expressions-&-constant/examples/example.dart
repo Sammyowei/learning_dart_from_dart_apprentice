@@ -110,4 +110,6 @@ subtraction. popularly known as BODMAS IN THE
   print('\n*********************************\n');
   print(3.14159.round());
   print('\n*********************************\n');
+
+// Type inference
 }
