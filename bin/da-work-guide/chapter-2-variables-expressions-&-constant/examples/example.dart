@@ -112,4 +112,12 @@ subtraction. popularly known as BODMAS IN THE
   print('\n*********************************\n');
 
 // Type inference
+
+  var someNumber = 10;
+  someNumber = 15;
+  print(someNumber);
+
+  // Constants
+  /* constants are immutable data
+  i.e once ti has been declared it cant be changed later on */
 }
