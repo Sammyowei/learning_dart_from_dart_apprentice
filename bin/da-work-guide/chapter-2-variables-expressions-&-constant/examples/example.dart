@@ -119,5 +119,8 @@ subtraction. popularly known as BODMAS IN THE
 
   // Constants
   /* constants are immutable data
-  i.e once ti has been declared it cant be changed later on */
+  i.e once it has been declared it cant be cha
+  nged later on */
+
+  const myConst = 10;
 }
