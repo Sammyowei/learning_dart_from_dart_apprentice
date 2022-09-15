@@ -14,7 +14,7 @@ void main() {
   /* A statement is a command, something you tell
   the computer to do. */
 
-  print('Hello, Dart Apperntice reader!');
+  print('Hello, Dart Apprentice reader!');
   print("\n*******************************************************\n");
   /* An expression is a value or something that
   can be calculated as a value... */
@@ -28,7 +28,7 @@ void main() {
   var x = 33;
   print(x);
 
-  /* Arithemetic Operators */
+  /* Ari Operators */
 
   print(2 + 6);
   print('\n*******************************************************\n');
@@ -44,7 +44,7 @@ void main() {
   print(22 / 7);
   print('\n*********************************\n');
 
-  /* For Integeral division you use
+  /* For Integer division you use
   the truncating division operator */
 
   print(22 ~/ 7);
@@ -57,14 +57,14 @@ void main() {
 // Order of operation
 
 /* Dart uses the order of precedence when
-solving complex arthimetic operations
+solving complex arithmetic operations
 Brackets,
 of, 
 division,
 multiplication,
 addition, and
-subtraction. popularlly known as BODMAS IN THE 
- MATHEMTICS SYLLABUS*/
+subtraction. popularly known as BODMAS IN THE
+ MATHEMATICS SYLLABUS*/
 
   print(((8000 / (5 * 10)) - 32) ~/ (29 % 5));
   print('\n*********************************\n');
