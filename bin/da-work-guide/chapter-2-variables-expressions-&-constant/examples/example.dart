@@ -134,4 +134,23 @@ subtraction. popularly known as BODMAS IN THE
 
   final hourSinceMidnight = DateTime.now().hour;
   print(hourSinceMidnight);
+  print('\n*********************************\n');
+  // Increment And Decrement
+
+  var counter = 0;
+
+  counter++;
+  print(counter); // counter = 1;
+  print('\n*********************************\n');
+  counter--;
+  print(counter); // counter = 0;
+  print('\n*********************************\n');
+  double myValue = 10;
+  myValue *= 3;
+  print(myValue); // myValue is now 30.
+  //myValue = 30;
+  print('\n*********************************\n');
+  myValue /= 2;
+  print(myValue); // myValue is now 15
+  // myValue = 15;
 }
