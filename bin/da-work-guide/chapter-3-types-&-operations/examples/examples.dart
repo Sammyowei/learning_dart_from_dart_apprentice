@@ -1,3 +1,5 @@
+import 'package:characters/characters.dart';
+
 void main() {
   // Annotating variables explicitly..
 
@@ -42,4 +44,55 @@ void main() {
   print(someDouble);
 
   // Strings
+  print('Hello, Dart!');
+  var greeting = 'Hello Dart!';
+  print(greeting);
+  greeting = 'Hello, Flutter';
+  print(greeting);
+
+  // gETTING CHARACTERS
+  var salutation = 'Hello!';
+  print(salutation.codeUnits);
+  const dart = '🎯';
+  print(dart.codeUnits);
+  print(dart.runes);
+
+  const flag = '🇲🇳';
+  print(flag.runes);
+
+  const family = '👨‍👩‍👧‍👦';
+  print(family.runes);
+  print(family.length);
+  print(family.codeUnits.length);
+  print(family.runes.length);
+  print(family.characters.length);
+
+  // Single quotes vs zdouble quotes
+// 'I like cats'
+// "I like Cats"
+
+// Concatenation
+
+  // in order to catenate you should use the string buffer
+
+  final message = StringBuffer();
+  message.write('Hello');
+  message.write(' my name is ');
+  message.write('Ray');
+  message.toString();
+  print(message);
+
+  // Interpolation
+
+  const name = 'Ray';
+  const introduction = 'Hello my name is $name';
+  print(introduction);
+
+  const oneThird = 1 / 3;
+  // const sentence = 'on third os $oneThird.';
+  // print(sentence);
+  final sentence = 'One Third is ${oneThird.toStringAsFixed(3)}.';
+  print(sentence);
+
+  // multi-line string
 }
