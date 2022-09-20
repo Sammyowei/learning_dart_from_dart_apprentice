@@ -1,5 +1,3 @@
-import 'dart:html';
-
 void main() {
   /* Mini-exercises 
   1. Create a constant called age1 and set it 
@@ -28,4 +26,30 @@ void main() {
   print(averageAge);
   // the reason why this is so is because of the division operator
   // which makes it a double.
+
+  /* 1. Create a string constant called firstName 
+  and initialize it to your first name. Also 
+  create a string constant called lastName and 
+  initialize it to your last name. */
+
+  const firstName = 'Samuelson';
+  const lastName = ' Owei';
+
+  /* 2. Create a string constant called fullName 
+  by adding the firstName and lastName constants 
+  together, separated by a space. 
+  */
+
+  const fullName = firstName + lastName;
+  print(fullName);
+
+  /* 3. Using interpolation, create a string 
+  constant called myDetails that uses the 
+  fullName constant to create a string introducing 
+  yourself. For example, Ray Wenderlich’s string 
+  would read: Hello, my name is Ray Wenderlich 
+  */
+
+  const myDetails = 'Hello, my name is $fullName';
+  print(myDetails);
 }

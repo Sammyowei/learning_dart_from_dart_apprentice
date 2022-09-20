@@ -95,4 +95,18 @@ void main() {
   print(sentence);
 
   // multi-line string
+
+  const bigString = '''
+you can have a string 
+that contains multiple 
+lines
+by
+doing this.
+''';
+  print(bigString);
+
+  // Inserting characters from their codes
+
+  print('I \u2764 Dart\u0021');
+  print('I love \u{1f3af}');
 }
