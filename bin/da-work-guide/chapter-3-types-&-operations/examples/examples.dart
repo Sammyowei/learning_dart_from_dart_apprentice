@@ -109,4 +109,10 @@ doing this.
 
   print('I \u2764 Dart\u0021');
   print('I love \u{1f3af}');
+
+  // Objects and dynamic types
+
+  var myVariable;
+  myVariable = 43;
+  myVariable = 'hello';
 }
