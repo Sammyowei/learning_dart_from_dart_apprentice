@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main() {
   /// Boolean values
 
@@ -131,5 +133,207 @@ void main() {
       print(global); 
       print(local); 
       print(insideIf); // Not allowed! }
+
+
+    make your variables have the smallest scope
+    they can get by with i.e define your variables to where you use them
+    as possible doing so makes their purpose more clear
+    and it also prevents you from using or changing them in places
+    where you shouldn't.
   */
+
+  // Ternary Operator
+  // Ternary operator takes three oprands instead
+  // of two oprand.
+  // (condition)? valueIfTrue : valueIfFalse;
+
+  const score = 83;
+
+  // String message;
+  // if (score >= 60) {
+  //   message = 'You Passed.';
+  // } else {
+  //   message = 'Sorry, You Failed.';
+  // }
+  // print(message);
+
+  const message = (score >= 60) ? 'You Passed.' : 'You Failed.';
+  print(message);
+
+//Switch Statement.
+
+/*
+ switch (variable) { 
+  case value1: 
+  // code 
+  break; 
+  case value2: 
+  // code 
+  break; 
+  ... 
+  default: 
+  // code 
+  } 
+  */
+
+  // Switch Statement was made to replace the else-if chain
+
+  const number = 3;
+  if (number == 0) {
+    print('zero');
+  } else if (number == 1) {
+    print('one');
+  } else if (number == 2) {
+    print('two');
+  } else if (number == 3) {
+    print('three');
+  } else if (number == 4) {
+    print('four');
+  } else {
+    print('something else');
+  }
+
+  switch (number) {
+    case 0:
+      print('Zero');
+      break;
+    case 1:
+      print('One');
+      break;
+    case 2:
+      print('Two');
+      break;
+    case 3:
+      print('Three');
+      break;
+    case 4:
+      print('Four');
+      break;
+    default:
+      print('Something Else');
+  }
+
+  // Swtich Statements does not support ranges
+  // like number >5. Only Equality == checking is allowed
+  //if your conditions involves ranges the if statement should be used.
+
+  // Switching on String
+
+  const weather = 'cloudy';
+  switch (weather) {
+    case 'sunny':
+      print('Put on sunscreen');
+      break;
+    case 'snowy':
+      print('Get your skis.');
+      break;
+    case 'cloudy':
+    case 'rainy':
+      print('Bring an umbrella');
+      break;
+    default:
+      print('Am not familiar with this weather.');
+  }
+
+  // Switching on Enums.
+
+  const weatherToday = Weather.cloudy;
+
+  switch (weatherToday) {
+    case Weather.sunny:
+      print('Put on SunScreen');
+      break;
+    case Weather.snowy:
+      print('Get your Skis.');
+      break;
+    case Weather.rainy:
+    case Weather.cloudy:
+      print('Bring an Umbrella');
+      break;
+  }
+// Printing an enum gives you it's value
+
+  print(weatherToday);
+  // you can get the index or ordinal placement of an enum
+
+  final index = weatherToday.index;
+  print(index);
+
+//Loops
+
+// While Loops
+
+// A while loop repeats block of codes as far as the boolean
+//condition remains true..
+
+/* 
+while(condition){
+  loop code
 }
+ */
+  var sum = 1;
+  // while (sum < 10) {
+  //   sum += 4;
+  //   print(sum);
+  // }
+
+  // do {
+  //   sum += 4;
+  //   print(sum);
+  // } while (sum < 10);
+  // Breaking out of the loop
+
+  while (true) {
+    sum += 4;
+    print(sum);
+
+    if (sum > 10) {
+      break;
+    }
+  }
+
+  final random = Random();
+  while (random.nextInt(6) + 1 != 6) {
+    print("not a six");
+  }
+  print("finally you've got a six");
+
+  // For loop.
+
+  // for (var i = 0; i < 5; i++) {
+  //   print(i);
+  // }
+
+  // Skipping an iteration
+
+  for (var i = 0; i < 5; i++) {
+    if (i == 2) {
+      continue;
+    }
+    print(i);
+  }
+
+// For-in loop
+
+  var myString = "i love Dart";
+  for (var codePoint in myString.runes) {
+    print(String.fromCharCode(codePoint));
+  }
+
+// For each loop.
+
+  const myNumber = [1, 2, 3];
+  myNumber.forEach((number) {
+    print(number);
+  });
+}
+
+enum Weather {
+  sunny,
+  snowy,
+  cloudy,
+  rainy,
+}
+// Naming enums
+// enum names starts must start with an uppercase as the initial.
+// the value of an enum should use lowerCamelCase naming convention.
