@@ -45,13 +45,22 @@ void main() {
   robin.layEggs();
 
   final original = 'abc';
-  final sectet = 'abc'.encoded;
+  final sectet =
+      "Uif!tfdsfu!up!mfbsojoh!Ebsu!xfmm!jt!up!dg'ewtkqw u'cpf'lwuv'vt{'vjkpiu0'Vlqfh#|rx*uh#uhdglqj#wkl v/#wkdw#reylrxvo|#ghvfulehv#|rx1#Kssh\$nsf%"
+          .decoded;
+
   print(sectet);
   sectet.decoded;
-  final decodedSecret = sectet.decoded;
-  print(decodedSecret);
-
+  final secret2 =
+      'cf&dvsjpvt&boe&kvtu&usz&uijoht/&Ukpeg"{qw)tg"tgcfkpi"vjku."vjcv"qdxkqwun{"fguetkdgu"{qw0"Jrrg#mre\$'
+          .decoded;
+  print(secret2);
   print(5.cubed);
+  final secret3 =
+      '%Tjodf!zpv(sf!sfbejoh!uijt-!uibu!pcwjpvtmz!eftdsjcft!zpv/!Iqqf"lqd#'
+          .decoded;
+  print(secret3);
+  print('Hppe!kpc"'.decoded);
 
   final language = ProgrammingLanguage.dart;
   print(language.isStronglyTyped);
