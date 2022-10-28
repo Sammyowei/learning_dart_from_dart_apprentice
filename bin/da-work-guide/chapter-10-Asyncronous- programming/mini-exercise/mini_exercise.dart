@@ -1,6 +1,11 @@
 import 'dart:async';
 
 Future<void> main() async {
+  miniExercise1();
+  miniExercise2();
+}
+
+Future<void> miniExercise1() async {
   /// 1. Use the Future.delayed constructor to provide a string after two
   /// seconds that says “I am from the future.”
   // await Future.delayed(
@@ -23,5 +28,24 @@ Future<void> main() async {
   } finally {
     await Future.delayed(Duration(seconds: 1));
     print('wow this code from the future');
+  }
+}
+
+Future<void> miniExercise2() async {
+  /// The following code produces a stream that outputs an integer every second
+  /// and then stops after the tenth time.
+  ///  Stream<int>.periodic(
+  /// Duration(seconds: 1),
+  /// (value) => value,
+  /// ).take(10)
+
+//  The folowing code produces a stream that outputs an integer every second and then stops after the tenth time. Stream<int>.periodic( Duration(seconds: 1), (value) => value, ).take(10)
+
+  final myStream = Stream<int>.periodic(
+    Duration(seconds: 2),
+    (value) => value,
+  ).take(10);
+  await for (var data in myStream) {
+    print(data);
   }
 }
